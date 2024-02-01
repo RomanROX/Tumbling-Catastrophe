@@ -68,6 +68,8 @@ public class waveManagement : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 3)
         {
             SceneManager.LoadScene(0);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         else
         { 
