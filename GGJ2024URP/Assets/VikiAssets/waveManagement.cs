@@ -76,6 +76,6 @@ public class waveManagement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         //LevelLoaderScript LevelLoader = transform.Find("LevelLoader").GetComponent<LevelLoaderScript>();
-        //LevelLoader.LoadNextLevelScene();
+        
     }
 }

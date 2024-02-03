@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     public LevelLoaderScript LevelLoaderScript;
     public void GoToNextScene()
     {
-        LevelLoaderScript.LoadNextLevelScene();
+        LevelLoaderScript.CustomLoader(1);
     }
 
     public void Setting()

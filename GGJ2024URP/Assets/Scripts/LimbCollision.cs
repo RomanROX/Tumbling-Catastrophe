@@ -10,6 +10,8 @@ public class LimbCollision : MonoBehaviour
         -da bude skakanje uvjek isto
         -? dodati još neke kosti da prate kretnju
      */
+    [SerializeField] private string tagName;
+
     [SerializeField] private PlayerController playerController;
 
     void Start()
@@ -19,6 +21,10 @@ public class LimbCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag(tagName))
+        {
         playerController.isGrounded = true;
+        Debug.Log("Sent IsGrounded");
+        }
     }
 }

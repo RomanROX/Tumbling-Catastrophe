@@ -97,12 +97,13 @@ public class Grabing : MonoBehaviour
 
     //ungrabanje objekta
     private void OnTriggerExit(Collider other)    {
-        if (other.gameObject.CompareTag("Item"))
+        if (other.gameObject.CompareTag("Item") && other.gameObject.name != "Enemy (raggdoll)(Clone)")
         {
             PlaySound(Throwclips);
             // Debug.Log("EXIT: " + other.name);
             if(other.transform.GetChild(0).TryGetComponent<GranadaExplode>(out GranadaExplode granadaExplode))
             {
+                
                 granadaExplode.Boom = true;
 
             }

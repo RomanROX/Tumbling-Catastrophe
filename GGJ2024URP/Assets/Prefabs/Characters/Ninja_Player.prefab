@@ -2820,6 +2820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41d36dea9239e848986bbff573e56bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: Ground
   playerController: {fileID: 0}
 --- !u!114 &4112664747550878136
 MonoBehaviour:
@@ -3061,7 +3062,7 @@ Transform:
   - {fileID: 3128434815705193882}
   - {fileID: 6421667138925726453}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7817026820307970190
 Animator:
@@ -5638,6 +5639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41d36dea9239e848986bbff573e56bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: Ground
   playerController: {fileID: 0}
 --- !u!114 &1883592869086362941
 MonoBehaviour:

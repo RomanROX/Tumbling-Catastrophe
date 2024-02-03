@@ -31,6 +31,11 @@ public class LevelLoaderScript : MonoBehaviour
         }
     }
 
+    public void CustomLoader(int level)
+    {
+        StartCoroutine(LoadLevel(level));
+    }
+
     public void ReloadLevelScene()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
